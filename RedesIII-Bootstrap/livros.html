@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Já Te Conto | Livros</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Fonte Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="/assets/livros.css">
+
+</head>
+
+<body>
+
+    <!-- CABEÇALHO -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light cabecalho-verde-agua">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand text-white" href="/index.html">
+                    Já Te Conto
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/index.html">
+                                Início
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active text-white" href="/livros.html">
+                                Livros
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                Contato
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">
+                                Serviços
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <form class="d-flex" id="formPesquisa">
+
+                        <input class="form-control me-2"
+                            type="search"
+                            id="pesquisaLivro"
+                            placeholder="Pesquisar livros..."
+                            aria-label="Pesquisar livros">
+
+                        <button class="btn btn-light" type="submit">
+                            Buscar
+                        </button>
+
+                    </form>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="catalogo">
+
+        <section class="catalogo-intro">
+
+            <h1>Explore o universo dos livros.</h1>
+
+            <p>
+                Encontre histórias, descubra novos mundos
+                e deixe-se levar pela leitura.
+            </p>
+
+        </section>
+
+
+        <!-- CATEGORIAS -->
+        <section class="categorias">
+
+            <h2>Categorias</h2>
+
+            <div class="botoes-categorias" id="botoesCategorias">
+
+                <button class="categoria-btn ativa" data-categoria="todos">
+                    Todos
+                </button>
+
+                <button class="categoria-btn" data-categoria="Literatura infantojuvenil">
+                    Literatura infantojuvenil
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LIVROS -->
+        <section class="secao-livros">
+
+            <div class="titulo-secao">
+                <h2>Destaques</h2>
+            </div>
+
+            <div class="fileira-livros" id="destaques">
+
+                <!-- Os livros serão inseridos pelo JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <section class="secao-livros">
+
+            <div class="titulo-secao">
+                <h2>Literatura infantojuvenil</h2>
+            </div>
+
+            <div class="fileira-livros" id="infantojuvenil">
+
+                <!-- Os livros serão inseridos pelo JavaScript -->
+
+            </div>
+
+        </section>
+
+
+        <p class="mensagem-vazia" id="mensagemVazia" hidden>
+            Não encontramos livros com essa pesquisa.
+        </p>
+
+    </main>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="/assets/js/livros.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+</html>

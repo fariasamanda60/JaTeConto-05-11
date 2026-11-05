@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Já Te Conto | Início</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Fonte Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Fonte Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body class="pagina-inicio">
+
+    <!-- CABEÇALHO -->
+    <nav class="navbar navbar-expand-lg navbar-light cabecalho-verde-agua">
+        <div class="container">
+
+            <a class="navbar-brand text-white" href="/index.html">
+                Já Te Conto
+            </a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menuNavegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavegacao">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white active"
+                            href="/index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+                            href="/livros.html">Livros</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-white"
+    href="/sobre.html">Sobre</a>
+                    </li>
+
+                </ul>
+
+                <a href="/perfil.html" class="btn btn-light">
+                    Meu perfil
+                </a>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- DICAS PARA ESCOLHER UM LIVRO -->
+    <header class="inicio-hero" id="sobre">
+
+        <div class="inicio-hero-conteudo">
+
+            <span class="inicio-etiqueta">
+                DICAS DE LEITURA
+            </span>
+
+            <h1>
+                Como escolher seu
+                <span>próximo livro?</span>
+            </h1>
+
+            <p>
+                Escolher um livro nem sempre é fácil, especialmente diante
+                de tantas histórias disponíveis. Para começar, pense nos
+                assuntos que despertam sua curiosidade: você prefere
+                mistérios, aventuras, romances ou mundos fantásticos?
+            </p>
+
+            <p>
+                Considere também seu momento de leitura. Se está começando,
+                experimente histórias mais curtas e narrativas envolventes.
+                Não tenha medo de explorar novos gêneros, conhecer autores
+                diferentes ou abandonar uma leitura que não esteja despertando
+                seu interesse.
+            </p>
+
+            <p class="inicio-frase-final">
+                Afinal, o melhor livro para começar é aquele que faz você
+                querer descobrir a próxima página!
+            </p>
+
+        </div>
+
+        <div class="inicio-hero-ilustracao">
+
+            <div class="dicas-visuais">
+                <div>📖 <span>Explore seus interesses</span></div>
+                <div>✨ <span>Experimente novos gêneros</span></div>
+                <div>💚 <span>Respeite seu próprio ritmo</span></div>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- CARROSSEL DE GÊNEROS -->
+    <main class="generos-principal">
+
+        <div class="generos-introducao">
+
+            <span>EXPLORE O UNIVERSO LITERÁRIO</span>
+
+            <h2>Por onde começar?</h2>
+
+            <p>
+                Conheça os gêneros literários e descubra três leituras
+                recomendadas para iniciar sua jornada.
+            </p>
+
+        </div>
+
+
+        <div id="carrosselGeneros"
+            class="carousel slide carrossel-generos"
+            data-bs-ride="false">
+
+            <div class="carousel-inner">
+
+
+                <!-- SLIDE 1: ROMANCE -->
+                <div class="carousel-item active">
+
+                    <section class="genero-slide">
+
+                        <h3>💗 Romance</h3>
+
+                        <p class="genero-descricao">
+                            O romance literário explora relações humanas,
+                            sentimentos, conflitos afetivos e diferentes
+                            formas de amar.
+                        </p>
+
+                        <p class="frase-literaria">
+                            “A razão por que a despedida nos dói tanto é que nossas almas
+                            estão ligadas. Talvez sempre tenham sido e sempre serão.
+                            Talvez nós tenhamos vivido mil vidas antes desta e em cada
+                            uma delas nós nos encontramos.”
+
+                            <span>— Diário de Uma Paixão, Nicholas Sparks</span>
+                        </p>
+
+                        <h4>Por onde começar?</h4>
+
+                        <div class="livros-recomendados">
+
+                            <!-- Livro 1 -->
+                            <a href="/livro.html?id=diario-de-uma-paixao"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    01 · INICIANTE
+                                </span>
+
+                                <img src="/assets/FotosLivros/DiarioDeUmaPaixao.png"
+                                    alt="Capa de O Diário de uma Paixão"
+                                    class="capa-livro">
+
+                                <strong>O Diário de uma Paixão</strong>
+                                <small>Nicholas Sparks</small>
+
+                            </a>
+
+
+                            <!-- Livro 2 -->
+                            <a href="/livro.html?id=orgulho-e-preconceito"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    02 · INTERMEDIÁRIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/OrgulhoEPreconceito.png"
+                                    alt="Capa de Orgulho e Preconceito"
+                                    class="capa-livro">
+
+                                <strong>Orgulho e Preconceito</strong>
+                                <small>Jane Austen</small>
+
+                            </a>
+
+
+                            <!-- Livro 3 -->
+                            <a href="/livro.html?id=madame-bovary"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    03 · DESAFIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/MadameBovary.png"
+                                    alt="Capa de Madame Bovary"
+                                    class="capa-livro">
+
+                                <strong>Madame Bovary</strong>
+                                <small>Gustave Flaubert</small>
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- SLIDE 2: FICÇÃO CIENTÍFICA -->
+                <div class="carousel-item">
+
+                    <section class="genero-slide">
+
+                        <h3>🚀 Ficção científica</h3>
+
+                        <p class="genero-descricao">
+                            Histórias que exploram ciência, tecnologia,
+                            viagens espaciais e possíveis futuros
+                            da humanidade.
+                        </p>
+
+                        <p class="frase-literaria">
+                            “Eu era bondoso e bom; a miséria me tornou um monstro.”
+
+                            <span>— Frankenstein, Mary Shelley</span>
+                        </p>
+
+                        <h4>Por onde começar?</h4>
+
+                        <div class="livros-recomendados">
+
+                            <a href="/livro.html?id=frankenstein"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    01 · INICIANTE
+                                </span>
+
+                                <img src="/assets/FotosLivros/Frankenstein.png"
+                                    alt="Capa de Frankenstein"
+                                    class="capa-livro">
+
+                                <strong>Frankenstein</strong>
+                                <small>Mary Shelley</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=fahrenheit-451"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    02 · INTERMEDIÁRIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/Fahrenheit451.png"
+                                    alt="Capa de Fahrenheit 451"
+                                    class="capa-livro">
+
+                                <strong>Fahrenheit 451</strong>
+                                <small>Ray Bradbury</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=1984"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    03 · DESAFIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/1984.png"
+                                    alt="Capa de 1984"
+                                    class="capa-livro">
+
+                                <strong>1984</strong>
+                                <small>George Orwell</small>
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- SLIDE 3: FANTASIA -->
+                <div class="carousel-item">
+
+                    <section class="genero-slide">
+
+                        <h3>🪄 Fantasia</h3>
+
+                        <p class="genero-descricao">
+                            Mundos imaginários, magia, criaturas fantásticas
+                            e acontecimentos que ultrapassam os limites
+                            da realidade.
+                        </p>
+
+                        <p class="frase-literaria">
+                            “Louca, louquinha! Mas vou te contar um segredo:
+                            as melhores pessoas são...”
+
+                            <span>— Alice no País das Maravilhas, Lewis Carroll</span>
+                        </p>
+
+                        <h4>Por onde começar?</h4>
+
+                        <div class="livros-recomendados">
+
+                            <a href="/livro.html?id=alice-no-pais-das-maravilhas"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    01 · INICIANTE
+                                </span>
+
+                                <img src="/assets/FotosLivros/AliceNoPaisDasMaravilhas.png"
+                                    alt="Capa de Alice no País das Maravilhas"
+                                    class="capa-livro">
+
+                                <strong>Alice no País das Maravilhas</strong>
+                                <small>Lewis Carroll</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=harry-potter"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    02 · INTERMEDIÁRIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/HarryPotterEAPedraFilosofal.png"
+                                    alt="Capa de Harry Potter e a Pedra Filosofal"
+                                    class="capa-livro">
+
+                                <strong>Harry Potter e a Pedra Filosofal</strong>
+                                <small>J. K. Rowling</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=o-hobbit"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    03 · DESAFIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/OHobbit.png"
+                                    alt="Capa de O Hobbit"
+                                    class="capa-livro">
+
+                                <strong>O Hobbit</strong>
+                                <small>J. R. R. Tolkien</small>
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- SLIDE 4: CLÁSSICOS -->
+                <div class="carousel-item">
+
+                    <section class="genero-slide">
+
+                        <h3>📚 Clássicos</h3>
+
+                        <p class="genero-descricao">
+                            Obras que marcaram a história da literatura,
+                            atravessaram gerações e continuam provocando
+                            reflexões.
+                        </p>
+
+                        <p class="frase-literaria">
+                            “Se tudo o mais perecesse e ele continuasse a existir,
+                            eu ainda continuaria a existir; mas, se tudo o mais
+                            permanecesse e ele fosse aniquilado, o universo se
+                            tornaria para mim uma imensa coisa estranha.”
+
+                            <span>— O Morro dos Ventos Uivantes, Emily Brontë</span>
+                        </p>
+
+                        <h4>Por onde começar?</h4>
+
+                        <div class="livros-recomendados">
+
+                            <a href="/livro.html?id=o-morro-dos-ventos-uivantes"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    01 · INICIANTE
+                                </span>
+
+                                <img src="/assets/FotosLivros/OMorroDosVentosUivantes.png"
+                                    alt="Capa de O Morro dos Ventos Uivantes"
+                                    class="capa-livro">
+
+                                <strong>O Morro dos Ventos Uivantes</strong>
+                                <small>Emily Brontë</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=a-metamorfose"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    02 · INTERMEDIÁRIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/AMetamorfose.png"
+                                    alt="Capa de A Metamorfose"
+                                    class="capa-livro">
+
+                                <strong>A Metamorfose</strong>
+                                <small>Franz Kafka</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=dom-casmurro"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    03 · DESAFIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/DomCasmurro.png"
+                                    alt="Capa de Dom Casmurro"
+                                    class="capa-livro">
+
+                                <strong>Dom Casmurro</strong>
+                                <small>Machado de Assis</small>
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- SLIDE 5: INFANTOJUVENIL -->
+                <div class="carousel-item">
+
+                    <section class="genero-slide">
+
+                        <h3>🧸 Infantojuvenil</h3>
+
+                        <p class="genero-descricao">
+                            Histórias que acompanham a infância e a juventude,
+                            explorando amizade, imaginação, descobertas
+                            e amadurecimento.
+                        </p>
+
+                        <p class="frase-literaria">
+                            “Foi o tempo que dedicaste à tua rosa que a fez tão importante.”
+
+                            <span>— O Pequeno Príncipe, Antoine de Saint-Exupéry</span>
+                        </p>
+
+                        <h4>Por onde começar?</h4>
+
+                        <div class="livros-recomendados">
+
+                            <a href="/livro.html?id=pequeno-principe"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    01 · INICIANTE
+                                </span>
+
+                                <img src="/assets/FotosLivros/PequenoPrincipe.png"
+                                    alt="Capa de O Pequeno Príncipe"
+                                    class="capa-livro">
+
+                                <strong>O Pequeno Príncipe</strong>
+                                <small>Antoine de Saint-Exupéry</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=matilda"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    02 · INTERMEDIÁRIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/Matilda.png"
+                                    alt="Capa de Matilda"
+                                    class="capa-livro">
+
+                                <strong>Matilda</strong>
+                                <small>Roald Dahl</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=meu-pe-de-laranja-lima"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    03 · DESAFIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/OMeuPeDeLaranjaLima.png"
+                                    alt="Capa de O Meu Pé de Laranja Lima"
+                                    class="capa-livro">
+
+                                <strong>O Meu Pé de Laranja Lima</strong>
+                                <small>José Mauro de Vasconcelos</small>
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- SLIDE 6: AVENTURA -->
+                <div class="carousel-item">
+
+                    <section class="genero-slide">
+
+                        <h3>🧭 Aventura</h3>
+
+                        <p class="genero-descricao">
+                            Viagens, explorações, desafios e acontecimentos
+                            inesperados que conduzem a grandes jornadas.
+                        </p>
+
+                        <p class="frase-literaria">
+                            “Descobrira uma grande lei da natureza humana:
+                            para fazer alguém desejar alguma coisa, basta
+                            torná-la difícil de conseguir.”
+
+                            <span>— As Aventuras de Tom Sawyer, Mark Twain</span>
+                        </p>
+
+                        <h4>Por onde começar?</h4>
+
+                        <div class="livros-recomendados">
+
+                            <a href="/livro.html?id=tom-sawyer"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    01 · INICIANTE
+                                </span>
+
+                                <img src="/assets/FotosLivros/TomSawyer.png"
+                                    alt="Capa de As Aventuras de Tom Sawyer"
+                                    class="capa-livro">
+
+                                <strong>As Aventuras de Tom Sawyer</strong>
+                                <small>Mark Twain</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=ilha-do-tesouro"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    02 · INTERMEDIÁRIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/AllhaDoTesouro.png"
+                                    alt="Capa de A Ilha do Tesouro"
+                                    class="capa-livro">
+
+                                <strong>A Ilha do Tesouro</strong>
+                                <small>Robert Louis Stevenson</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=robinson-crusoe"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    03 · DESAFIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/RobsonCrusoe.png"
+                                    alt="Capa de Robinson Crusoé"
+                                    class="capa-livro">
+
+                                <strong>Robinson Crusoé</strong>
+                                <small>Daniel Defoe</small>
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+
+                <!-- SLIDE 7: SUSPENSE -->
+                <div class="carousel-item">
+
+                    <section class="genero-slide">
+
+                        <h3>🔎 Suspense</h3>
+
+                        <p class="genero-descricao">
+                            Mistérios, investigações, segredos e reviravoltas
+                            que despertam a curiosidade e prendem a atenção
+                            do leitor.
+                        </p>
+
+                        <p class="frase-literaria">
+                            “Para uma grande inteligência, nada é pequeno.”
+
+                            <span>— Um Estudo em Vermelho, Arthur Conan Doyle</span>
+                        </p>
+
+                        <h4>Por onde começar?</h4>
+
+                        <div class="livros-recomendados">
+
+                            <a href="/livro.html?id=um-estudo-em-vermelho"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    01 · INICIANTE
+                                </span>
+
+                                <img src="/assets/FotosLivros/UmEstudoEmVermelho.png"
+                                    alt="Capa de Um Estudo em Vermelho"
+                                    class="capa-livro">
+
+                                <strong>Um Estudo em Vermelho</strong>
+                                <small>Arthur Conan Doyle</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=e-nao-sobrou-nenhum"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    02 · INTERMEDIÁRIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/ENaoSobrouNenhum.png"
+                                    alt="Capa de E Não Sobrou Nenhum"
+                                    class="capa-livro">
+
+                                <strong>E Não Sobrou Nenhum</strong>
+                                <small>Agatha Christie</small>
+
+                            </a>
+
+
+                            <a href="/livro.html?id=o-cao-dos-baskerville"
+                                class="livro-recomendado">
+
+                                <span class="ordem-leitura">
+                                    03 · DESAFIO
+                                </span>
+
+                                <img src="/assets/FotosLivros/OCaoDosBaskerville.png"
+                                    alt="Capa de O Cão dos Baskerville"
+                                    class="capa-livro">
+
+                                <strong>O Cão dos Baskerville</strong>
+                                <small>Arthur Conan Doyle</small>
+
+                            </a>
+
+                        </div>
+
+                    </section>
+
+                </div>
+
+            </div>
+
+
+            <!-- SETA ESQUERDA -->
+            <button class="carousel-control-prev seta-genero"
+                type="button"
+                data-bs-target="#carrosselGeneros"
+                data-bs-slide="prev"
+                aria-label="Gênero anterior">
+
+                <span class="carousel-control-prev-icon"
+                    aria-hidden="true"></span>
+
+            </button>
+
+
+            <!-- SETA DIREITA -->
+            <button class="carousel-control-next seta-genero"
+                type="button"
+                data-bs-target="#carrosselGeneros"
+                data-bs-slide="next"
+                aria-label="Próximo gênero">
+
+                <span class="carousel-control-next-icon"
+                    aria-hidden="true"></span>
+
+            </button>
+
+
+            <!-- INDICADORES -->
+            <div class="indicadores-genero">
+
+                <button type="button"
+                    data-bs-target="#carrosselGeneros"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-label="Romance"></button>
+
+                <button type="button"
+                    data-bs-target="#carrosselGeneros"
+                    data-bs-slide-to="1"
+                    aria-label="Ficção científica"></button>
+
+                <button type="button"
+                    data-bs-target="#carrosselGeneros"
+                    data-bs-slide-to="2"
+                    aria-label="Fantasia"></button>
+
+                <button type="button"
+                    data-bs-target="#carrosselGeneros"
+                    data-bs-slide-to="3"
+                    aria-label="Clássicos"></button>
+
+                <button type="button"
+                    data-bs-target="#carrosselGeneros"
+                    data-bs-slide-to="4"
+                    aria-label="Infantojuvenil"></button>
+
+                <button type="button"
+                    data-bs-target="#carrosselGeneros"
+                    data-bs-slide-to="5"
+                    aria-label="Aventura"></button>
+
+                <button type="button"
+                    data-bs-target="#carrosselGeneros"
+                    data-bs-slide-to="6"
+                    aria-label="Suspense"></button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="inicio-rodape">
+
+        <a href="/index.html">Já Te Conto</a>
+
+        <p>
+            Um espaço para descobrir histórias, explorar ideias
+            e encontrar novas leituras.
+        </p>
+
+        <span>© 2026 Já Te Conto</span>
+
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

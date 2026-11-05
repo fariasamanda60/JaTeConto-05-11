@@ -1,0 +1,268 @@
+
+/* =================================
+   CONFIGURAÇÕES GERAIS
+================================= */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7fbf9;
+    color: #263b35;
+    margin: 0;
+}
+
+
+/* =================================
+   CONTEÚDO PRINCIPAL
+================================= */
+
+.pagina-livro {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 0 70px;
+}
+
+
+/* =================================
+   CAMINHO DE NAVEGAÇÃO
+================================= */
+
+.caminho-navegacao {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 35px;
+    font-size: 14px;
+    color: #71817b;
+}
+
+.caminho-navegacao a {
+    color: #258b75;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.caminho-navegacao a:hover {
+    color: #40bfa3;
+    text-decoration: underline;
+}
+
+
+/* =================================
+   ÁREA DE DETALHES DO LIVRO
+================================= */
+
+.detalhes-livro {
+    display: flex;
+    align-items: flex-start;
+    gap: 55px;
+}
+
+
+/* =================================
+   CAPA DO LIVRO
+================================= */
+
+.capa-livro {
+    flex: 0 0 300px;
+}
+
+.capa-livro img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =================================
+   INFORMAÇÕES DO LIVRO
+================================= */
+
+.informacoes-livro {
+    flex: 1;
+    min-width: 0;
+}
+
+.categoria-livro {
+    display: inline-block;
+    color: #258b75;
+    background-color: #dff5ed;
+    padding: 6px 13px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.informacoes-livro h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #174c40;
+    margin-bottom: 8px;
+}
+
+.informacoes-livro h2 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #71817b;
+    margin-bottom: 30px;
+}
+
+
+/* =================================
+   SINOPSE
+================================= */
+
+.sinopse-livro {
+    margin-bottom: 30px;
+}
+
+.sinopse-livro h3,
+.dados-livro h3 {
+    font-size: 19px;
+    font-weight: 600;
+    color: #174c40;
+    margin-bottom: 12px;
+}
+
+.sinopse-livro p {
+    font-size: 14px;
+    line-height: 1.9;
+    color: #53645e;
+    text-align: justify;
+}
+
+
+/* =================================
+   DADOS DO LIVRO
+================================= */
+
+.dados-livro {
+    margin-bottom: 30px;
+}
+
+.lista-informacoes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px 25px;
+}
+
+.lista-informacoes div {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.lista-informacoes strong {
+    color: #174c40;
+    display: block;
+    font-weight: 600;
+}
+
+.lista-informacoes span {
+    color: #71817b;
+}
+
+
+/* =================================
+   BOTÃO DE DOWNLOAD
+================================= */
+
+.acoes-livro {
+    margin-top: 25px;
+}
+
+.botao-download {
+    display: inline-block;
+    background-color: #40bfa3;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px 30px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botao-download:hover {
+    background-color: #258b75;
+    color: white;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.botao-download.disabled {
+    background-color: #a9c8be;
+    color: #ffffff;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+/* =================================
+   RODAPÉ
+================================= */
+
+.rodape {
+    background-color: #40bfa3;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+}
+
+.rodape p {
+    margin: 0;
+}
+
+
+/* =================================
+   RESPONSIVIDADE
+================================= */
+
+@media (max-width: 768px) {
+
+    .detalhes-livro {
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .capa-livro {
+        flex: none;
+        width: 230px;
+        max-width: 80%;
+    }
+
+    .informacoes-livro {
+        width: 100%;
+    }
+
+    .informacoes-livro h1 {
+        font-size: 28px;
+    }
+
+    .informacoes-livro h2 {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .pagina-livro {
+        width: 92%;
+        padding-top: 25px;
+    }
+
+    .lista-informacoes {
+        grid-template-columns: 1fr;
+    }
+
+    .informacoes-livro h1 {
+        font-size: 25px;
+    }
+
+}
